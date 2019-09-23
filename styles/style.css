@@ -1,0 +1,317 @@
+/* Start Font */
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,800|Montserrat:900&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Dosis', sans-serif;
+*/
+/* End Font */
+
+/* Start Body */
+body {
+    color: #24292e;
+    font-family: Dosis, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+/* End Body */
+
+/* Start Heading */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: 1px;
+	font-weight: 800;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+chickenbim{
+	font-family: Montserrat;
+}
+/* End Heading */
+
+/* Start Anchor / Hyperlink */
+a{
+	color: #cc1a2a;
+    text-decoration: none;
+	-webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+a:link, a:visited {
+    color: #cc1a2a;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #131313;
+    text-decoration: none;
+}
+/* End Anchor / Hyperlink */
+
+/* Start Debug */
+.bg-blue {
+    background-color: blue;
+}
+.bg-red {
+    background-color: red;
+}
+/* End Debug */
+
+/* Start Logo */
+.logo {
+    text-align: center;
+}
+/* End Logo */
+
+/* Start Menu Atas */
+.menu-atas ul {
+    background-color: #cc1a2a;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+.menu-atas li {
+    border-right: 1px solid #d1d5da;
+    display: inline-block;
+    margin: 0 -4px;
+}
+.menu-atas a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.menu-atas a:hover {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+/* End Menu Atas */
+
+/* Start Form */
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 14px;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888888;
+    font-weight: 300;
+
+}
+
+input[type="submit"] {
+    background-color: #e6ebf1;
+    border-color: #d1d5da;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+/* End Form */
+
+/* Start Container */
+.container {
+    margin: 10px auto;
+    width: 90%;	
+}
+.container-half{
+    margin: 10px auto;
+    width: 50%;
+}
+.container-full {
+    margin: 10px auto;
+    width: 100%;
+}
+/* End Container */
+
+/* Start Jumbotron */
+.jumbotron {
+    background-color: #3f2622;
+    border: 1px solid #eaecef;
+    border-radius: 4px;
+    padding: 20px 0;
+	color: white;
+}
+.jumbotron h1 {
+    font-size: 32px;
+    padding: 0 20px;
+}
+.jumbotron h3 {
+    font-size: 20px;
+    padding: 0 20px;
+}
+/* End Jumbotron */
+
+/* Start Box */
+.box-heading {
+    background-color: #3f2622;
+/*    border: 1px solid #d1d5da;*/
+    border-radius: 3px 3px 0 0;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+	color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.box-heading h6 {
+    margin: 0;
+}
+.box-sub-heading {
+    text-transform: uppercase;
+}
+.box-isi {
+    background-color: #ffffff;
+/*    border-bottom: 4px solid #3f2622;*/
+    border-top: 0;
+    margin: 0;
+    padding: 20px 20px;
+}
+.box-kiri{
+	width: 49%;
+	float: left;
+	height: 300px;
+}
+.box-kanan{
+	width: 49%;
+	float: right;
+	height: 300px;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+/*	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);*/
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+/* End Box */
+
+/* Start Testimonial */
+.testimonial blockquote p {
+    border-left: 4px solid #dfe2e5;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+/* End Testimonial */
+
+/* Start Contact */
+.contact-form div {
+    margin: 20px auto;
+}
+/* End Contact */
+
+/* Start Menu Bawah */
+.menu-bawah {
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #eaecef;
+    border-top: 1px solid #eaecef;
+    overflow: auto;
+    padding: 10px 0;
+}
+.menu-bawah h6 {
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.menu-bawah ul {
+    padding: 0;
+}
+.menu-bawah li {
+    display: block;
+}
+.menu-bawah li a,
+.menu-bawah p {
+    display: block;
+    font-size: 15px;
+}
+
+.menu-bawah-one,
+.menu-bawah-two,
+.menu-bawah-three {
+    float: left;
+}
+.menu-bawah-one {
+    width: 40%;
+}
+.menu-bawah-two,
+.menu-bawah-three {
+    float: left;
+    width: 30%;
+}
+
+.menu-bawah li img {
+    vertical-align: middle;
+}
+/* End Menu Bawah */
+
+/* Start Copyright */
+.copyright p {
+    font-size: 15px;
+}
+/* End Copyright */
+/*start custom effect*/
+.box-shadow{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/*end custom effect*/
